@@ -1,5 +1,3 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
@@ -8,18 +6,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
 body {
-    font-family: 'Roboto', sans-serif;    
+    font-family: 'Roboto', sans-serif;
 }
 
 /*------Header-----*/
+
 header {
     height: 70px;
     width: 100%;
@@ -27,8 +25,8 @@ header {
     justify-content: start;
     align-items: center;
     flex-wrap: wrap;
-    box-shadow: 0 0 5px rgba(0, 0, 0, .4); 
-    position: relative;   
+    box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+    position: relative;
 }
 
 header h1 {
@@ -44,11 +42,10 @@ header h1 {
 header nav ul {
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
 }
 
 header nav ul li a {
-    margin: 0 20px;
+    margin: 0 10px;
     text-decoration: none;
     color: black;
     transition: all 0.4s linear;
@@ -56,57 +53,36 @@ header nav ul li a {
 
 header nav ul li a:hover {
     color: red;
-    
-}
-/*---MQ----*/
-@media screen and (max-width:480px) {
-    header {
-        height: auto;
-    }
-    header h1 {
-        width: 100%;
-        font-size:25px;
-    }
-    header nav {
-        width: 100%;
-    }
-    header nav ul li {
-        width: 100%;
-        padding: 3px 0;
-    }
-    header nav ul li a {
-        display: block;
-        font-size: 12px;
-        width: 100%;
-        border-bottom: 1px solid lightgrey;
-    }
-    
-}
 
+}
 
 /*------------------Main-------------------*/
 
 /*------Hero------*/
+
 .hero {
     text-align: left;
     width: 100%;
-    height: 400px;
+    height: 350px;
     background-image: url(../img/model.webp);
-    background-position:top;
+    background-position: top;
     background-repeat: no-repeat;
-    background-attachment:fixed;
+    background-attachment: fixed;
     padding: 50px 50px;
     color: red;
 }
+
 .hero h2 {
     font-family: 'Roboto Serif', serif;
     font-size: 60px;
 }
+
 .hero p {
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
     margin-bottom: 15px;
 }
+
 .hero a {
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
@@ -118,32 +94,12 @@ header nav ul li a:hover {
     padding: 5px;
     transition: all 0.4s ease-in-out;
 }
+
 .hero a:hover {
     background-color: red;
     color: white;
     border-color: white;
 }
-
-@media screen and (max-width:480px) {
-    .hero {
-        height: auto;
-        padding: 40px 20px;
-        background-position:center;
-        }
-
-    .hero h2 {
-        font-size: 40px;
-        }
-    .hero p {
-        font-size: 25px;
-        margin-bottom: 10px;
-        }
-    .hero a {         
-        font-size: 10px;
-        }    
-    
-}
-
 
 /*------Bienvenidos-----*/
 
@@ -156,69 +112,62 @@ header nav ul li a:hover {
     background-color: red;
     text-align: center;
 }
+
 .bienvenidos p {
     font-size: 15px;
     line-height: 30px;
     margin: 15px 0;
 }
 
-.bienvenidos div{
+.bienvenidos div {
     width: 350px;
     height: auto;
 }
+
 .bienvenidos img {
-    width: 300px;
+    width: 100%;
     height: 100%;
-    margin: 20px;
-}
-@media screen and (max-width:480px) {
-    .bienvenidos h2 {
-        font-size: 18px;
-    }
-    .bienvenidos p {
-        margin: 0 20px 20px 20px;
-        font-size: 12px;
-        line-height: 20px;
-    }
+    object-fit: cover;
+    margin: 20px 0;
 }
 
 /*------productos destacados-----*/
 
-.productosDestacados {
-    text-align: center;
-}
-
 .productosDestacados h2 {
+    text-align: center;
     color: red;
     font-size: 24px;
     margin: 20px 0;
 }
 
-.productoInicio h3 {
-    font-family: 'Roboto Serif', serif;
-    font-size: small;
-    margin: 10px 10px;
-}
 .destacados {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-.destacados div {
+.contDestacados {
+    display: flex;
+    flex-direction: column;
     border: 1px solid gray;
-    width: 251px;
-    height: 450px;
+    width: 240px;
+    height: auto;
     text-align: center;
     margin: 10px;
 }
 
-.destacados div img {
-    width: 249px;
-    height: auto;
+.contDestacados img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.destacados a{
+.contDestacados h3 {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.contDestacados a {
     background-color: red;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
@@ -230,30 +179,22 @@ header nav ul li a:hover {
 }
 
 /*------New-----*/
-.contentNew{
-    width: 100%;
+.carrusel {
+    width: 95%;
     height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 10px 0;
+    margin: 0 auto;
 }
-.new {
-    background-image: url(../img/newfoto.jpg);
-    width: 400px;
-    height: auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 200px 20px 100px 20px;
-    text-align: center;
-    color: white;
-}
+
 .new h2 {
     font-family: 'Roboto Serif', serif;
     font-size: 60px;
 }
+
 .new p {
     font-size: 20px;
 }
+
 .envioGratis {
     font-family: 'Roboto Serif', serif;
     font-size: 20px;
@@ -266,62 +207,76 @@ header nav ul li a:hover {
 /*GALERIA*/
 .galeriaNew {
     margin: 20px 20px;
-    text-align: center;
+
 }
+
 .galeriaNew h2 {
+    text-align: center;
     color: red;
     font-size: 24px;
     margin: 20px 0;
 }
+
 .gridGaleria {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 250px;
     gap: 15px;
 }
+
 .gridGaleria div img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .gridSpan3 {
     grid-row: span 2;
 }
+
 .gridSpan4 {
     grid-row: span 2;
 }
+
 .gridSpan9 {
     grid-row: span 3;
 }
+
 .gridSpan12 {
     grid-row: span 2;
 }
+
 /*------Productos-----*/
 
 .gridProductos {
-    padding: 20px 10px;
+
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 340px;
     gap: 15px;
 }
+
 .gridProductosItem {
-    width: 200px;
-    height: 280px;
+    width: 220px;
+    height: 300px;
     text-align: center;
-    padding-bottom: 10px;
+    padding: 10px 0;
+    margin: 0 auto;
 }
+
 .gridProductosItem img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.gridProductosItem h3{
+
+.gridProductosItem h3 {
     font-family: 'Roboto Serif', serif;
     font-size: 25px;
     color: red;
 }
-.gridProductosItem a{
+
+.gridProductosItem a {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
     letter-spacing: 3px;
@@ -329,6 +284,7 @@ header nav ul li a:hover {
     padding: 8px 8px;
     text-decoration: none;
 }
+
 .galeriaBtn {
     background-color: red;
 }
@@ -336,33 +292,40 @@ header nav ul li a:hover {
 /*------Nosotros-----*/
 .nosotros {
     background-image: url(../img/nosotros-3.jpg);
-    width: 100vw;
-    height: 450px;
+    width: 100%;
+    height: auto;
     background-position: center;
     background-repeat: no-repeat;
+    padding: 50px;
+}
+
+.nosotros div {
+    width: 400px;
     text-align: left;
-    padding: 50px 50px;
     color: black;
 }
+
 .nosotros h2 {
     font-family: 'Roboto Serif', serif;
     font-size: 60px;
 }
+
 .nosotros p {
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     margin-bottom: 15px;
 }
+
 .nosotros a {
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: smaller;
     font-size: 14px;
-    color:black;
+    color: black;
     border: solid 1px black;
     padding: 5px 5px;
     transition: all 0.4s linear;
 }
+
 .nosotros a:hover {
     color: red;
     border-color: red;
@@ -370,25 +333,28 @@ header nav ul li a:hover {
 
 .atencion {
     display: flex;
-    justify-content: start;
+    justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
-.atencion div {
-    width: 350px;
-    height: 300px;
-    margin: 30px 20px;
-    overflow: hidden;
-    position: relative;
-}
-.atencion div img {
-    width: auto;
-    height: 100%;
-    position: absolute;
 
+.atencion div {
+    width: 300px;
+    height: 250px;
+    margin: 30px 10px;
 }
+
+.atencion div img {
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .atencion div h2 {
     font-size: 18px;
 }
+
 .atencion div p {
     font-size: 14px;
 }
@@ -406,18 +372,17 @@ form h3 {
 
 .formulario {
     width: 300px;
-    margin: 0 auto;
-    margin-top: 100px;
-    padding: 30px;
+    margin: 20px auto;
+    padding: 20px;
     border: solid 1px black;
     border-radius: 4px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
-    color:black;
+    color: black;
     text-align: center;
 }
 
-.campo{
+.campo {
     border: solid 1px black;
     padding: 10px;
     margin: 10px 0;
@@ -425,10 +390,11 @@ form h3 {
 }
 
 .campo:focus {
-    border-color:rgb(235, 152, 152);
+    border-color: rgb(235, 152, 152);
 }
 
-input, textarea {
+input,
+textarea {
     outline: none;
     border: 0;
 }
@@ -446,29 +412,39 @@ textarea {
     letter-spacing: 2px;
     font-size: smaller;
 }
+
 .btnForm:hover {
 
-    transition: 0.5s ;
+    transition: 0.5s;
     background-color: rgb(235, 152, 152);
 }
 
 /*------Footer-----*/
 
 footer {
-    margin-top: 50px;
-    text-align: center;
-    font-size: small;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     clear: both;
-    padding-bottom: 50px;
 }
+
 footer p {
-    margin-top: 15px;
+    margin: 0 auto;
+    font-size: 10px;
+    text-align: center;
 }
+
+footer h4 {
+    font-size: 14px;
+    text-align: center;
+}
+
 .grupoIconos {
     margin: 0 auto;
     width: 150px;
     display: flex;
-    justify-content:center;
+    justify-content: center;
 }
 
 /*-----Botones Iconos----*/
@@ -491,22 +467,194 @@ footer p {
 
 /*------Media Query-----*/
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:960px) {
     .gridGaleria {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: 220px;
     }
+
     .gridItem {
         grid-column: span 1;
         grid-row: span 1;
     }
+
     .gridSpan2 {
         grid-row: span 2;
     }
+
     .gridSpan3 {
         grid-row: span 2;
     }
+
     .gridSpan12 {
         grid-row: span 2;
     }
+
+    /*PRODUCTOS--MQ*/
+    .gridProductos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width:800px) {
+    .gridProductos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*NOSOTROS--MQ*/
+
+    .nosotros {
+        padding: 30px;
+    }
+
+    .nosotros div {
+        width: 300px;
+    }
+
+    .nosotros h2 {
+        font-size: 50px;
+    }
+
+    .nosotros p {
+        font-size: 13px;
+    }
+
+    .nosotros a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:550px) {
+
+    /*PRODUCTOS--MQ*/
+    .gridProductos {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    /*BIENVENIDOS--MQ*/
+
+    .bienvenidos h2 {
+        font-size: 18px;
+    }
+
+    .bienvenidos p {
+        margin: 0 20px 20px 20px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    /*GALERIA--MQ*/
+
+    header {
+        height: auto;
+    }
+
+    header h1 {
+        width: 100%;
+        font-size: 25px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    header nav ul {
+        margin-left: 10px;
+        flex-wrap: wrap;
+    }
+
+    header nav ul li {
+        width: 94%;
+        padding: 3px 0;
+    }
+
+    header nav ul li a {
+        text-align: center;
+        display: block;
+        font-size: 14px;
+        width: 100%;
+        border-bottom: 1px solid lightgrey;
+    }
+
+    /*HERO---MQ*/
+
+    .hero {
+        height: auto;
+        padding: 40px 20px;
+        background-position: center;
+    }
+
+    .hero h2 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .hero a {
+        font-size: 10px;
+    }
+
+
+    /*GALERIA--MQ*/
+
+    .gridGaleria {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 270px;
+    }
+
+    .gridItem {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .gridSpan2 {
+        grid-row: auto;
+    }
+
+    .gridSpan3 {
+        grid-row: auto;
+    }
+
+    .gridSpan4 {
+        grid-row: auto;
+    }
+
+    .gridSpan9 {
+        grid-row: auto;
+    }
+
+    .gridSpan12 {
+        grid-row: auto;
+    }
+
+    /*NOSOTROS--MQ*/
+
+    .nosotros {
+        padding: 20px;
+    }
+
+    .nosotros div {
+        width: 250px;
+    }
+
+    .nosotros h2 {
+        font-size: 40px;
+    }
+
+    .nosotros p {
+        font-size: 12px;
+    }
+
+    .nosotros a {
+        font-size: 10px;
+    }
+
 }
