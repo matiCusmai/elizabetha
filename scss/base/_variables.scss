@@ -1,0 +1,44 @@
+$color-principal : black;
+$color-secundario : red;
+$color-terciario : white;
+
+@mixin flex ($flex, $justifi, $align, $wrap) {
+    display: $flex;
+    justify-content: $justifi;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+
+%img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+$font-size: 60px,
+    30px,
+    24px,
+    18px,
+    14px,
+    10px;
+
+    %boton {
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        font-size: nth($font-size, 6);
+        letter-spacing: 5px;
+        color: $color-terciario;
+        border: solid 1px $color-terciario;
+        background-color: $color-secundario;
+        width: 120px;
+        padding: 5px;
+        transition: all 0.4s ease-in-out;
+    
+        &:hover {
+            background-color: $color-terciario;
+            color: $color-secundario;
+            border-color: $color-secundario;
+        }
+    }
+    

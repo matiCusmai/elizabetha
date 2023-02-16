@@ -1,0 +1,40 @@
+header {
+    height: 70px;
+    width: 100%;
+    @include flex (flex, start, center, wrap);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+    position:relative;
+
+    h1 {
+        font-size: nth($font-size, 2);
+        font-family: 'Roboto Serif', serif;    
+        margin: 0 20px;
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    nav {
+        @include flex (flex, center, center, wrap);
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+
+            li {
+                font-family: 'Poppins', sans-serif;
+                font-style: normal;
+                a {
+                    margin: 0 10px;
+                    text-decoration: none;
+                    color: $color-principal;
+                    transition: all 0.4s linear;
+
+                    &:hover {
+                        color: $color-secundario;
+                    }
+                }
+            }
+        }
+    }
+}

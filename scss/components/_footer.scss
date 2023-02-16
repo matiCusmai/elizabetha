@@ -1,0 +1,49 @@
+footer {
+    margin: 40px auto 20px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    clear: both;
+
+    h4 {
+        font-size: nth($font-size, 5);
+        text-align: center;
+    }
+
+    .grupoIconos {
+        margin: 0 auto;
+        width: 150px;
+        display: flex;
+        justify-content: center;
+
+        a {
+            .contenedorIcono {
+                position: relative;
+                height: 30px;
+                width: 30px;
+                cursor: pointer;
+
+                img {
+                    position: absolute;
+                    left: 0;
+                    transition: 0.5s ease-in-out;
+                }
+
+                .icon {
+                    &:hover {
+                        opacity: 0;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    p {
+        margin: 0 auto;
+        font-size: nth($font-size, 6);
+        text-align: center;
+    }
+
+}
