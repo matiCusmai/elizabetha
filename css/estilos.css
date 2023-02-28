@@ -36,7 +36,7 @@ header {
   height: 70px;
   width: 100%;
   display: flex;
-  justify-content: start;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
@@ -47,25 +47,6 @@ header {
     margin: 0 20px;
     font-weight: bold;
     font-style: normal; }
-  header nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; }
-    header nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center; }
-      header nav ul li {
-        font-family: 'Poppins', sans-serif;
-        font-style: normal; }
-        header nav ul li a {
-          margin: 0 10px;
-          text-decoration: none;
-          color: black;
-          transition: all 0.4s linear; }
-          header nav ul li a:hover {
-            color: red; }
 
 .hero {
   text-align: left;
