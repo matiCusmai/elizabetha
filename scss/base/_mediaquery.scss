@@ -70,71 +70,18 @@
 
 @media screen and (max-width:480px) {
 
-    header {
-        height: auto;
-
-        h1 {
-            width: 100%;
-            font-size: nth($font-size, 3);
-            text-align: center;
-            margin-top: 10px;
-        }
-
-        nav {
-            width: 100%;
-
-            ul {
-                flex-wrap: wrap;
-                margin: 0 auto;
-
-                li {
-                    width: 94%;
-                    padding: 3px 0;
-
-                    a {
-                        margin: 0 auto;
-                        text-align: center;
-                        display: block;
-                        font-size: nth($font-size, 5);
-                        width: 97%;
-                        border-bottom: 1px solid lightgrey;
-                    }
-                }
-            }
-        }
-    }
-
     main {
-        .bienvenidos {
-            h2 {
-                font-size: nth($font-size, 4);
-            }
+        // .bienvenidos {
+        //     h2 {
+        //         font-size: nth($font-size, 4);
+        //     }
 
-            p {
-                margin: 0 20px 20px 20px;
-                font-size: nth($font-size, 6);
-                line-height: 20px;
-            }
-        }
-
-        .hero {
-            height: auto;
-            padding: 40px 20px;
-            background-position: center;
-
-            h2 {
-                font-size: nth($font-size, 2);
-            }
-
-            p {
-                font-size: nth($font-size, 3);
-                margin-bottom: 10px;
-            }
-
-            a {
-                font-size: nth($font-size, 6);
-            }
-        }
+        //     p {
+        //         margin: 0 20px 20px 20px;
+        //         font-size: nth($font-size, 6);
+        //         line-height: 20px;
+        //     }
+        // }
 
         .galeriaNew {
             .gridGaleria {
@@ -177,7 +124,6 @@
 
             div {
                 width: 250px;
-
                 p {
                     font-size: nth($font-size, 6);
                 }
